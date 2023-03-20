@@ -1,3 +1,11 @@
+*2023-03-20* Initial push to repo.
+
+# Instructions
+1. copy repo
+2. execute `npm run scrape`
+
+--
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
