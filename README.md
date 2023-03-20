@@ -5,8 +5,8 @@ Inspiration & Tutorial: https://youtu.be/RM-v7zoYQo0
 2. execute `npm run scrape`
 
 ## Scraping To-dos
-[] Don't include LABs and Books links
-[] For APJs, extract only the question portion from intro & remove commentary
+- [ ] Don't include LABs and Books links
+- [ ] For APJs, extract only the question portion from intro & remove commentary
 
 ## Changelog
 **2023-03-20**: Initial push to repo. Have test guardrails in place. Namely:
