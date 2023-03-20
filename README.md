@@ -10,8 +10,8 @@ Inspiration & Tutorial: https://youtu.be/RM-v7zoYQo0
 
 ## Changelog
 **2023-03-20**: Initial push to repo. Have test guardrails in place. Namely:
-1. `if (nextLink && pageCounter < 1)`
-2. `if (i !== 0) break;` 
+1. `if (nextLink && pageCounter < 1)` - pulls links only from init URL
+2. `if (i !== 0) break;`  - gets text only from 1 essay
 
 
 -- BOILERPLATE README BELOW --
