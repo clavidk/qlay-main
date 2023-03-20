@@ -1,10 +1,20 @@
-*2023-03-20* Initial push to repo.
+Inspiration & Tutorial: https://youtu.be/RM-v7zoYQo0
 
 # Instructions
 1. copy repo
 2. execute `npm run scrape`
 
---
+## Scraping To-dos
+[] Don't include LABs and Books links
+[] For APJs, extract only the question portion from intro & remove commentary
+
+## Changelog
+**2023-03-20**: Initial push to repo. Have test guardrails in place. Namely:
+1. `if (nextLink && pageCounter < 1)`
+2. `if (i !== 0) break;` 
+
+
+-- BOILERPLATE README BELOW --
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
