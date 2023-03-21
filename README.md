@@ -4,13 +4,8 @@ Inspiration & Tutorial: https://youtu.be/RM-v7zoYQo0
 1. copy repo
 2. execute `npm run scrape`
 
-## Changelog
-**2023-03-20**: Initial push to repo. Have test guardrails in place. Namely:
-1. `if (nextLink && pageCounter < 1)` - pulls links only from init URL
-2. `if (i !== 0) break;`  - gets text only from 1 essay
 
-
--- BOILERPLATE README BELOW --
+# *BOILERPLATE README BELOW**
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
