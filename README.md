@@ -1,9 +1,5 @@
 Inspiration & Tutorial: https://youtu.be/RM-v7zoYQo0
 
-# Instructions
-1. copy repo
-2. execute `npm run scrape`
-
 
 # *BOILERPLATE README BELOW**
 
