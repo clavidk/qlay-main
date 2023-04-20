@@ -25,7 +25,7 @@ const extractDoubleQuotedSentences = (text: string) => {
     return sentences ? sentences.join(' ') : '';
 };
 
-const scrapeLinks = async (url: string) => {
+const scrapeLinks = async (url: string): Promise<void> => {
     const html = await axios.get(url);
     const $ = cheerio.load(html.data);
 
@@ -39,13 +39,15 @@ const scrapeLinks = async (url: string) => {
         const date = formatDate(dateStr);
         links.each((j, link) => {
             const href = $(link).attr('href');
-            if (!href.startsWith('/labs/') && !href.startsWith('/books/')) {
-                const linkObj = {
-                    url: href,
-                    title: title,
-                    date: date
-                };
-                linkArr.push(linkObj);
+            if (href) {
+                if (!href.startsWith('/labs/') && !href.startsWith('/books/')) {
+                    const linkObj = {
+                        url: href,
+                        title: title,
+                        date: date
+                    };
+                    linkArr.push(linkObj);
+                }
             }
         });
     });
