@@ -12,7 +12,7 @@ const DATE_SELECTOR = 'div.card--resource__date';
 const NEXT_SELECTOR = 'a[rel="next"]';
 const CHUNK_SIZE = 200;
 
-const formatDate = (dateString) => {
+const formatDate = (dateString: string | number | Date) => {
     const date = new Date(dateString);
     const year = date.getFullYear();
     const month = String(date.getMonth() + 1).padStart(2, '0');
@@ -20,12 +20,12 @@ const formatDate = (dateString) => {
     return `${year}-${month}-${day}`;
 };
 
-const extractDoubleQuotedSentences = (text) => {
+const extractDoubleQuotedSentences = (text: string) => {
     const sentences = text.match(/“([^”]*)”/g);
     return sentences ? sentences.join(' ') : '';
 };
 
-const scrapeLinks = async (url) => {
+const scrapeLinks = async (url: string) => {
     const html = await axios.get(url);
     const $ = cheerio.load(html.data);
 
