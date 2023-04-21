@@ -4,14 +4,14 @@ import { createParser, ParsedEvent, ReconnectInterval } from "eventsource-parser
 
 export const supabaseAdmin = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!);
 
-export const OpenAIStream = async (prompt: string, apiKey: string) => {
+export const OpenAIStream = async (prompt: string) => {
   const encoder = new TextEncoder();
   const decoder = new TextDecoder();
 
   const res = await fetch("https://api.openai.com/v1/chat/completions", {
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${apiKey}`
+      Authorization: `Bearer ${process.env.OPENAI_API_KEY}`
     },
     method: "POST",
     body: JSON.stringify({

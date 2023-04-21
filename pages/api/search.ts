@@ -6,10 +6,8 @@ export const config = {
 
 const handler = async (req: Request): Promise<Response> => {
   try {
-    const { query, apiKey, matches } = (await req.json()) as {
+    const { query} = (await req.json()) as {
       query: string;
-      apiKey: string;
-      matches: number;
     };
 
     const input = query.replace(/\n/g, " ");
@@ -17,7 +15,7 @@ const handler = async (req: Request): Promise<Response> => {
     const res = await fetch("https://api.openai.com/v1/embeddings", {
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${apiKey}`
+        Authorization: `Bearer ${process.env.OPENAI_API_KEY}`
       },
       method: "POST",
       body: JSON.stringify({
@@ -32,7 +30,7 @@ const handler = async (req: Request): Promise<Response> => {
     const { data: chunks, error } = await supabaseAdmin.rpc("piper_search", {
       query_embedding: embedding,
       similarity_threshold: 0.01,
-      match_count: matches
+      match_count: 5
     });
 
     if (error) {
