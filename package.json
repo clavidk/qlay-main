@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@next/font": "^13.2.3",
+    "@notionhq/client": "^2.2.4",
     "@tabler/icons-react": "^2.4.0",
     "@types/node": "18.15.3",
     "@types/react": "18.0.28",
