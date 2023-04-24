@@ -16,8 +16,8 @@ export type PiperChunk = {
     article_url: string;
     article_date: string;
     content: string;
-    content_tokens: number;
-    embedding: number[];
+    content_tokens?: number;
+    embedding?: number[];
 }
 
 export type PiperJSON = {

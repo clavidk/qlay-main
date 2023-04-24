@@ -7,7 +7,7 @@ export const Footer: FC = () => {
       <div className="hidden sm:flex"></div>
 
       <div className="hidden sm:flex italic text-sm">
-        Created by
+        AI-generated answers are inspired by content by John Piper 
         <a
           className="hover:opacity-50 mx-1"
           href="https://twitter.com/mckaywrigley"

@@ -3,8 +3,8 @@ import { FC } from "react";
 
 export const Navbar: FC = () => {
   return (
-    <div className="flex h-[60px] border-b border-gray-300 py-2 px-8 items-center justify-between">
-      <div className="font-bold text-2xl flex items-center">
+    <div className="flex h-[60px] bg-white py-2 px-8 items-center justify-between shadow-md" style={{ fontFamily: 'Balto Web, Helvetica, Arial, sans-serif', boxShadow: '0 0 7px 0 rgba(0, 0, 0, .3)' }}>
+      <div className="font-bold text-base text-gray-700 flex items-center">
         <a
           className="hover:opacity-50"
           href="https://www.desiringgod.org"
@@ -20,11 +20,6 @@ export const Navbar: FC = () => {
           rel="noreferrer"
         >
           <div className="hidden sm:flex">Desiring God</div>
-
-          <IconExternalLink
-            className="ml-1"
-            size={20}
-          />
         </a>
       </div>
     </div>

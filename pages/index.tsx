@@ -18,6 +18,60 @@ export default function Home() {
   const [loading, setLoading] = useState<boolean>(false);
   const [mode, setMode] = useState<"search" | "chat">("chat");
 
+  const sampleQAs = [
+    {
+      question: "What's your favorite food?",
+      answer:
+        "I'm not one for fancy foods, but I love Noel's spaghetti. If I had to pick a restaurant I'd say Olive Garden. Chick-fil-a is up there also. For breakfast, I have a 4 layer cereal I like: The first layer is Grape Nuts, and the second layer is Mini Shredded Wheats — not the sweetened kind. And the last layer is Great Heartland Granola, and then blueberries on top.",
+      passages: [
+        {
+          article_title: "Title 1",
+          article_date: "Date 1",
+          article_url: "https://www.desiringgod.org",
+          content: "passage content 1",
+        },
+        {
+          article_title: "Title 2",
+          article_date: "Date 2",
+          article_url: "https://www.desiringgod.org",
+          content: "passage content 2",
+        },
+      ]
+    },
+    {
+      question: "What's your least favorite food?",
+      answer:
+        "I don't like expensive fancy food",
+      passages: [
+        {
+          article_title: "Title 1",
+          article_date: "Date 1",
+          article_url: "https://www.desiringgod.org",
+          content: "passage content 1",
+        },
+        {
+          article_title: "Title 2",
+          article_date: "Date 2",
+          article_url: "https://www.desiringgod.org",
+          content: "passage content 2",
+        },
+      ]
+    }
+    // Add more sample Q&As here
+  ];
+  
+  
+  const handleSampleQuestion = (
+    sampleQuestion: string,
+    sampleAnswer: string,
+    samplePassages: PiperChunk[]
+  ) => {
+    setQuery(sampleQuestion);
+    setAnswer(sampleAnswer);
+    setChunks(samplePassages);
+  };  
+  
+
   const handleSearch = async () => {
     if (!query) {
       alert("Please enter a query.");
@@ -174,6 +228,19 @@ export default function Home() {
                     className="absolute right-2 top-2.5 h-7 w-7 rounded-full bg-blue-500 p-1 hover:cursor-pointer hover:bg-blue-600 sm:right-3 sm:top-3 sm:h-10 sm:w-10 text-white"
                   />
                 </button>
+
+                <div className="mt-2 space-y-1">
+                  {sampleQAs.map((sampleQA, index) => (
+                    <button
+                      key={index}
+                      className="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600 focus:outline-none"
+                      onClick={() => handleSampleQuestion(sampleQA.question, sampleQA.answer, sampleQA.passages)}
+                    >
+                      {sampleQA.question}
+                    </button>                  
+                  ))}
+                </div>
+
               </div>
             )}
 
@@ -192,7 +259,7 @@ export default function Home() {
                   </>
                 )}
 
-                <div className="font-bold text-2xl mt-6">Passages</div>
+                <div className="font-bold text-2xl mt-6">Related Resources</div>
                 <div className="animate-pulse mt-2">
                   <div className="h-4 bg-gray-300 rounded"></div>
                   <div className="h-4 bg-gray-300 rounded mt-2"></div>
@@ -207,7 +274,7 @@ export default function Home() {
                 <Answer text={answer} />
 
                 <div className="mt-6 mb-16">
-                  <div className="font-bold text-2xl">Passages</div>
+                  <div className="font-bold text-2xl">Related Resources</div>
 
                   {chunks.map((chunk, index) => (
                     <div key={index}>
