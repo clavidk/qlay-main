@@ -6,7 +6,7 @@ import { PiperChunk } from "@/types";
 import { IconArrowRight, IconExternalLink, IconSearch } from "@tabler/icons-react";
 import endent from "endent";
 import Head from "next/head";
-import { KeyboardEvent, useEffect, useRef, useState } from "react";
+import { KeyboardEvent, useRef, useState } from "react";
 
 
 export default function Home() {
@@ -16,18 +16,9 @@ export default function Home() {
   const [chunks, setChunks] = useState<PiperChunk[]>([]);
   const [answer, setAnswer] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
-
-  const [showSettings, setShowSettings] = useState<boolean>(false);
   const [mode, setMode] = useState<"search" | "chat">("chat");
-  const [matchCount, setMatchCount] = useState<number>(5);
-  // const [apiKey, setApiKey] = useState<string>("");
 
   const handleSearch = async () => {
-    // if (!apiKey) {
-    //   alert("Please enter an API key.");
-    //   return;
-    // }
-
     if (!query) {
       alert("Please enter a query.");
       return;
@@ -63,11 +54,6 @@ export default function Home() {
   };
 
   const handleAnswer = async () => {
-    // if (!apiKey) {
-    //   alert("Please enter an API key.");
-    //   return;
-    // }
-
     if (!query) {
       alert("Please enter a query.");
       return;
@@ -145,58 +131,6 @@ export default function Home() {
     }
   };
 
-  const handleSave = () => {
-    // if (apiKey.length !== 51) {
-    //   alert("Please enter a valid API key.");
-    //   return;
-    // }
-
-    // localStorage.setItem("PG_KEY", apiKey);
-    // localStorage.setItem("PG_MATCH_COUNT", matchCount.toString());
-    localStorage.setItem("PG_MODE", mode);
-
-    setShowSettings(false);
-    inputRef.current?.focus();
-  };
-
-  const handleClear = () => {
-    // localStorage.removeItem("PG_KEY");
-    // localStorage.removeItem("PG_MATCH_COUNT");
-    localStorage.removeItem("PG_MODE");
-
-    // setApiKey("");
-    // setMatchCount(5);
-    setMode("search");
-  };
-
-  useEffect(() => {
-    if (matchCount > 10) {
-      setMatchCount(10);
-    } else if (matchCount < 1) {
-      setMatchCount(1);
-    }
-  }, [matchCount]);
-
-  useEffect(() => {
-    // const PG_KEY = localStorage.getItem("PG_KEY");
-    // const PG_MATCH_COUNT = localStorage.getItem("PG_MATCH_COUNT");
-    const PG_MODE = localStorage.getItem("PG_MODE");
-
-    // if (PG_KEY) {
-    //   setApiKey(PG_KEY);
-    // }
-
-    // if (PG_MATCH_COUNT) {
-    //   setMatchCount(parseInt(PG_MATCH_COUNT));
-    // }
-
-    if (PG_MODE) {
-      setMode(PG_MODE as "search" | "chat");
-    }
-
-    inputRef.current?.focus();
-  }, []);
-
   return (
     <>
       <Head>
@@ -220,74 +154,6 @@ export default function Home() {
         <div className="flex-1 overflow-auto">
           <div className="mx-auto flex h-full w-full max-w-[750px] flex-col items-center px-3 pt-4 sm:pt-8">
             <Form />
-            <button
-              className="mt-4 flex cursor-pointer items-center space-x-2 rounded-full border border-zinc-600 px-3 py-1 text-sm hover:opacity-50"
-              onClick={() => setShowSettings(!showSettings)}
-            >
-              {showSettings ? "Hide" : "Show"} Settings
-            </button>
-
-            {showSettings && (
-              <div className="w-[340px] sm:w-[400px]">
-                <div>
-                  <div>Mode</div>
-                  <select
-                    className="max-w-[400px] block w-full cursor-pointer rounded-md border border-gray-300 p-2 text-black shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 sm:text-sm"
-                    value={mode}
-                    onChange={(e) => setMode(e.target.value as "search" | "chat")}
-                  >
-                    <option value="search">Search</option>
-                    <option value="chat">Chat</option>
-                  </select>
-                </div>
-
-                {/* <div className="mt-2">
-                  <div>Passage Count</div>
-                  <input
-                    type="number"
-                    min={1}
-                    max={10}
-                    value={matchCount}
-                    onChange={(e) => setMatchCount(Number(e.target.value))}
-                    className="max-w-[400px] block w-full rounded-md border border-gray-300 p-2 text-black shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 sm:text-sm"
-                  />
-                </div> */}
-
-                {/* <div className="mt-2">
-                  <div>OpenAI API Key</div>
-                  <input
-                    type="password"
-                    placeholder="OpenAI API Key"
-                    className="max-w-[400px] block w-full rounded-md border border-gray-300 p-2 text-black shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 sm:text-sm"
-                    value={apiKey}
-                    onChange={(e) => {
-                      setApiKey(e.target.value);
-
-                      if (e.target.value.length !== 51) {
-                        setShowSettings(true);
-                      }
-                    }}
-                  />
-                </div> */}
-
-                <div className="mt-4 flex space-x-2 justify-center">
-                  <div
-                    className="flex cursor-pointer items-center space-x-2 rounded-full bg-green-500 px-3 py-1 text-sm text-white hover:bg-green-600"
-                    onClick={handleSave}
-                  >
-                    Save
-                  </div>
-
-                  <div
-                    className="flex cursor-pointer items-center space-x-2 rounded-full bg-red-500 px-3 py-1 text-sm text-white hover:bg-red-600"
-                    onClick={handleClear}
-                  >
-                    Clear
-                  </div>
-                </div>
-              </div>
-            )}
-
             {(
               <div className="relative w-full mt-4">
                 <IconSearch className="absolute top-3 w-10 left-1 h-6 rounded-full opacity-50 sm:left-3 sm:top-4 sm:h-8" />
@@ -296,7 +162,7 @@ export default function Home() {
                   ref={inputRef}
                   className="h-12 w-full rounded-full border border-zinc-600 pr-12 pl-11 focus:border-zinc-800 focus:outline-none focus:ring-1 focus:ring-zinc-800 sm:h-16 sm:py-2 sm:pr-16 sm:pl-16 sm:text-lg"
                   type="text"
-                  placeholder="How do I start a startup?"
+                  placeholder="What's your favorite food?"
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
                   onKeyDown={handleKeyDown}
