@@ -47,41 +47,33 @@ export const Form: FC = () => {
     
 
     return (
-        <form onSubmit={handleSubmit} className="space-y-4">
-        <div className="space-y-1">
-            <label htmlFor="name" className="block text-sm font-medium">
-            Name
-            </label>
+        <form onSubmit={handleSubmit} className="flex space-x-2 items-center">
             <input
-            id="name"
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            className="block w-full p-2 border border-gray-300 rounded"
+                id="name"
+                type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                className="block w-auto p-2 border border-gray-300 rounded"
+                placeholder="Name"
             />
-        </div>
-        <div className="space-y-1">
-            <label htmlFor="email" className="block text-sm font-medium">
-            Email
-            </label>
             <input
-            id="email"
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="block w-full p-2 border border-gray-300 rounded"
+                id="email"
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="block w-auto p-2 border border-gray-300 rounded"
+                placeholder="Email"
             />
-        </div>
-        <button
-            type="submit"
-            className="w-full py-2 text-white bg-blue-600 rounded hover:bg-blue-700"
-        >
-            Submit
-        </button>
-        {error && <p className="text-red-600">{error}</p>}
-        {success && <p className="text-green-600">{success}</p>}
-        </form>
-    );
-};
-
+            <button
+                type="submit"
+                className="py-1 px-3 text-white bg-red-600 rounded hover:bg-red-700"
+            >
+                Submit
+            </button>
+            {error && <p className="text-red-600">{error}</p>}
+            {success && <p className="text-green-600">{success}</p>}
+            </form>
+        );
+    };
+    
 export default Form;
