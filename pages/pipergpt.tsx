@@ -6,6 +6,7 @@ import { PiperChunk } from "@/types";
 import { IconArrowRight, IconExternalLink, IconSearch } from "@tabler/icons-react";
 import endent from "endent";
 import Head from "next/head";
+import Image from "next/image";
 import { KeyboardEvent, useRef, useState } from "react";
 
 
@@ -249,7 +250,7 @@ export default function Home() {
       <div className="flex flex-col h-screen">
       <div className="flex-1 overflow-auto">
         <div className="mx-auto flex mt-32 w-full max-w-[750px] flex-col items-center px-3 pt-4 sm:pt-8">
-          <h1 className="text-4xl font-bold mb-4">Ask Pastor JohnGPT</h1>
+          <h1 className="text-5xl font-bold mb-4 items-center">Ask Pastor <span className="inline-flex">J<span className="relative"><Image src="/img/piper-icon.png" alt="Custom O" width="50" height="50"/></span>hnGPT</span></h1>
           {(
             <div className="relative w-full mt-4">
               <IconSearch className="absolute top-3 w-6 left-3 h-6 rounded-full opacity-50 text-gray-400" />
@@ -305,7 +306,7 @@ export default function Home() {
                   </>
                 )}
 
-                <div className="font-bold text-lg mt-6">Related Resources</div>
+                <div className="font-bold text-lg mt-6">Related Resources from <a href="https://www.desiringgod.org/" className="text-red-700 underline">Desiring God</a></div>
                 <div className="animate-pulse mt-2">
                   <div className="h-4 bg-gray-300 rounded"></div>
                   <div className="h-4 bg-gray-300 rounded mt-2"></div>
@@ -320,7 +321,7 @@ export default function Home() {
                 <Answer text={answer} />
 
                 <div className="mt-6 mb-16">
-                  <div className="font-bold text-xl text-gray-800">Related Resources</div>
+                  <div className="font-bold text-xl text-gray-800">Related Resources from <a href="https://www.desiringgod.org/" className="text-red-700 underline">Desiring God</a></div>
 
                   {chunks.map((chunk, index) => (
                     <div key={index}>
