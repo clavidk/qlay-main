@@ -25,7 +25,7 @@ export const Footer: FC<FooterProps> = ({ show }) => {
     <Transition in={show} timeout={duration} unmountOnExit>
       {(state) => (
         <div
-          className="flex flex-col min-h-[100px] border-t border-gray-300 py-2 px-4 sm:px-8 items-center sm:justify-between justify-center"
+          className="flex flex-col min-h-[20vh] border-t border-gray-300 py-2 px-4 sm:px-8 items-center sm:justify-between justify-center"
           style={{
             ...defaultStyle,
             ...transitionStyles[state],
