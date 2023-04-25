@@ -7,4 +7,12 @@ module.exports = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  async rewrites() {
+    return [
+      {
+        source: '/pipergpt',
+        destination: '/pipergpt',
+      },
+    ];
+  },
 };

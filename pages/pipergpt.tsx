@@ -249,7 +249,7 @@ export default function Home() {
       <div className="flex flex-col h-screen">
       <div className="flex-1 overflow-auto">
         <div className="mx-auto flex mt-32 w-full max-w-[750px] flex-col items-center px-3 pt-4 sm:pt-8">
-          <h1 className="text-4xl font-bold mb-4">Home Test</h1>
+          <h1 className="text-4xl font-bold mb-4">Ask Pastor JohnGPT</h1>
           {(
             <div className="relative w-full mt-4">
               <IconSearch className="absolute top-3 w-6 left-3 h-6 rounded-full opacity-50 text-gray-400" />
