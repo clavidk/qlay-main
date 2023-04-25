@@ -21,6 +21,31 @@ export default function Home() {
 
   const sampleQAs = [
     {
+      question: "Your favorite novels?",
+      answer:
+        "As a lover of literature, I have many favorite novels. All the Light We Cannot See by Anthony Doerr is a beautifully written book about World War II and the interweaving of lives of a young blind girl during the bombing of the Germans on France. A Man at Arms by Steven Pressfield is also a contemporary novel that tells the dramatic story of a young speechless girl carrying the Corinthian correspondence to Corinth, Paul’s letters to Corinth, and a man at arms who steps up to be her protector. If I had to pick a classic, it would be Crime and Punishment by Dostoevsky, just because the power of the description of the tormented soul of Raskolnikov is unparalleled. As a Christian, I also spend a lot of time reading the Bible. My favorite, most frequently used Bible app is Logos Bible software. It is an excellent tool for studying the Bible and has helped me to deepen my understanding of God's Word. I believe that reading is a valuable and enriching experience, and I encourage everyone to read as much as they can. Even in my seventies, I am constantly discovering new books and authors that I have never read before. I recently read The Warmth of Other Suns, a Pulitzer prize-winning narrative history that is just knocking me over with sadness because of what I was involved in in those days and the horrors of the background of African Americans in this country. I also just finished listening to Leland Ryken’s new biography of J. I. Packer. In other words, I try to listen to fiction if somebody has given me a really good recommendation of something contemporary or if I want to get back into something historic that I haven’t even done.",
+      passages: [
+        {
+          article_title: "John Piper's Favorite Things",
+          article_date: "2023-01-01",
+          article_url: "https://www.desiringgod.org/interviews/john-pipers-favorite-things",
+          content: "All the Light We Cannot See by Anthony Doerr, a contemporary — that is, in the last ten years — is a beautifully written book about World War II and the interweaving of lives of a young blind girl during the bombing of the Germans on France. All the Light We Cannot See. A Man at Arms by Steven Pressfield is also contemporary — written in the last five years, probably. It’s a dramatic telling of a young speechless girl carrying the Corinthian correspondence to Corinth, Paul’s letters to Corinth. And a man at arms steps up to be her protector. Amazing book. And then historically, if I had to pick a classic, it would be Crime and Punishment by Dostoevsky, just because the power of the description of the tormented soul of Raskolnikov is unparalleled. Your favorite, most frequently used Bible app? Logos. Logos Bible software? Yes.",
+        },
+        {
+          article_title: "C.J. Mahaney Interviews John Piper",
+          article_date: "2016-10-24",
+          article_url: "https://www.desiringgod.org/interviews/c-j-mahaney-interviews-john-piper",
+          content: "Given that high price you’re paying. Right. I’m listening to Gulliver’s Travels. Why? In all seriousness, why? Because I’m a lit major and I never read it. Evidently it’s supposed to be good because it’s a classic and I want to know. I just finished Moby Dick. I’ve never read Moby Dick. Whoa. What did you study then as a lit major? This is an easy question to answer. I’ve skipped all the novels courses because they’re too long. Seriously, I couldn’t read it all. They give you a stack of eight or ten novels to read in a semester. There’s no way I can read I can read maybe one novel in a semester, but eight? I never took these courses — ever. I took 17th century poetry. Little teeny sonnet.",
+        },
+        {
+          article_title: "How Do You Use Your iPhone and iPad in Christian Growth?",
+          article_date: "2016-03-31",
+          article_url: "https://www.desiringgod.org/interviews/how-do-you-use-your-iphone-and-ipad-in-christian-growth",
+          content: "And, at the same time, I am listening to a narrative history of the great migration of African Americans from the South to the North called The Warmth of Other Suns, a Pulitzer prize-winning narrative history that is just knocking me over with sadness because of what I was involved in in those days and the horrors of the background of African Americans in this country. And at the same time I am listening to Leland Ryken’s new biography of J. I. Packer. So I have got three audio books going at the same time, just listening according to what I feel like in the moment. And I just finished listening, last year, to The Brothers Karamazov. In other words, I try to listen to fiction if somebody has given me a really good recommendation of something contemporary or if I want to get back into something historic that I haven’t even done.",
+        },
+      ]
+    },
+    {
       question: "What's your favorite food?",
       answer:
         "My favorite breakfast is a layer of Grape Nuts and a layer of Mini Shredded Wheats, and my favorite soft drink alternates between Diet Dr. Pepper and Diet Coke. At home, my wife's spaghetti is hands down my favorite dinner. As for restaurants, my wife says I can't say Chick-fil-A or Chipotle, but Olive Garden is a bona fide restaurant that I enjoy. However, I believe that the more expensive the restaurant, the weirder the food tastes.",
@@ -40,21 +65,27 @@ export default function Home() {
       ]
     },
     {
-      question: "What's your least favorite food?",
+      question: "Is my depression biological or spiritual?",
       answer:
-        "I don't like expensive fancy food",
+        "Depression can have both biological and spiritual components. It is important to recognize that our bodies and souls are intertwined, and physical remedies can be a gift from God's hand. Medication can be helpful in stabilizing physical symptoms of depression, allowing for progress in counseling and spiritual growth. However, we should also be cautious and not rely solely on medication as a first course of action. We should also consider natural strategies such as diet, exercise, sleep, and environment, which can affect our psychological and spiritual condition. Ultimately, we need to talk to ourselves and ask why we are downcast, and turn to God's promises for comfort and hope.",
       passages: [
         {
-          article_title: "Title 1",
-          article_date: "Date 1",
-          article_url: "https://www.desiringgod.org",
-          content: "passage content 1",
+          article_title: "What's Your Take on Christians Using Antidepressants?",
+          article_date: "2009-09-28",
+          article_url: "https://www.desiringgod.org/interviews/whats-your-take-on-christians-using-antidepressants",
+          content: "So we apply this principle that we all use to depression, and then the fact that the body is included in depression. Whether we should use the terms &quot;chemical imbalances&quot;—I've read both sides on that. Some people say that there is no scientific evidence for such a thing and others say that it is a given. Whatever. Everybody knows that there are physical dimensions to depression. If that physical dimension could be helped by medicine—in the short run especially, sometimes long term—then I think, in God's grace and mercy, we should take it as a gift from his hand.",
         },
         {
-          article_title: "Title 2",
-          article_date: "Date 2",
-          article_url: "https://www.desiringgod.org",
-          content: "passage content 2",
+          article_title: "Anti-Depressants, Sleep, Diet, and Exercise",
+          article_date: "2016-10-24",
+          article_url: "https://www.desiringgod.org/interviews/anti-depressants-sleep-diet-and-exercise",
+          content: "This is huge to me and I think I am still learning about it. It relates to ADD; it relates to anxiety and panic attacks; it relates to the issue of whether there is sin or sickness or a mixture. It might be helpful to lay out just a little bit of what I have learned about making the physical remedies, or strategies, spiritual. And that is the way I think about it: What makes the use of a physical strategy in coping or flourishing with ADD, or with anxiety attacks, or with any other problem for that matter, spiritual? What makes a Christian experience “Christian” or “spiritual” when they use the things that the world would use? We all know that our spiritual condition is affected by physical aspects of life. Our souls are woven together with our bodies and our environment in ways that are complex and inevitable. God made us that way. We are souls with bodies. We always will be souls with bodies.",
+        },
+        {
+          article_title: "Anxiety: Sin, Disorder, or Both?",
+          article_date: "2014-02-19",
+          article_url: "https://www.desiringgod.org/interviews/anxiety-sin-disorder-or-both",
+          content: "What we eat and drink and how we sleep and exercise and how we deal with the weather we live in, like is it dark in February? Will the sun ever come out? Will the temperature ever get, you know, above zero? The lighting that we have at work, the sounds that we are surrounded with — a chirping bird versus a whirring freeway — all of these things affect our psychological and our spiritual condition, which simply means that there may be extreme cases that require special physical efforts, including medication, that provide a kind of equilibrium where the more natural strategies can have their best effects. In other words, medication may bring a person to the point where they can avail themselves more effectively of God-given natural strategies and maybe later we could talk about how these work. I have ideas about how to sanctify these natural strategies. But for now I just want to emphasize that, Yes, we ought not to be anxious. And, Yes, we are all anxious. And, Yes, God has provided wonderful resources both spiritually in his promises and physically with steps like Get enough sleep in order to have the resources that he provides to be content.",
         },
       ]
     }
@@ -71,10 +102,10 @@ export default function Home() {
     setAnswer(sampleAnswer);
     setChunks(samplePassages);
 
-    // Show the footer after a 3-second delay
+    // Show the footer after a 7-second delay
     setTimeout(() => {
       setShowFooter(true);
-    }, 3000);
+    }, 7000);
 
   };  
   
@@ -179,10 +210,10 @@ export default function Home() {
       setAnswer((prev) => prev + chunkValue);
     }
 
-    // Show the footer after a 3-second delay
+    // Show the footer after a 7-second delay
     setTimeout(() => {
       setShowFooter(true);
-    }, 3000);
+    }, 7000);
 
     inputRef.current?.focus();
   };
@@ -241,8 +272,8 @@ export default function Home() {
               </button>
 
               <div className="mt-2 space-y-2 text-center">
-                <h3 className="text-lg font-semibold mt-6 mb-2 text-gray-800">Featured Questions</h3>
-                <div className="flex flex-wrap justify-center space-x-2">
+                <h3 className="text-lg font-semibold mt-6 mb-2 text-gray-500">Featured Questions</h3>
+                <div className="flex flex-wrap justify-center space-x-2 gap-y-2">
                   {sampleQAs.map((sampleQA, index) => (
                     <button
                       key={index}
@@ -352,7 +383,7 @@ export default function Home() {
                 ))}
               </div>
             ) : (
-              <div className="mt-6 text-center text-lg text-gray-400">{`Note: Answers may not reflect the actual opinions or thoughts of John Piper`}</div>
+              <div className="mt-6 text-center text-md text-gray-400">{`Disclaimer: Answers may not reflect the actual opinions or thoughts of John Piper`}</div>
             )}
           </div>
         </div>
