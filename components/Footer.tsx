@@ -32,10 +32,10 @@ export const Footer: FC<FooterProps> = ({ show }) => {
           }}
         >
           <div className="hidden sm:flex"></div>
-          <h1 className="text-2xl font-bold">Get updates</h1>
-          <p className="text-sm text-gray-500 mb-4">new AI tools for Christians</p>
+          <h1 className="text-2xl font-bold mt-2">Follow us</h1>
+          <p className="text-sm text-gray-500 mb-4">We&apos;re building AI-powered tools for everday Christians</p>
           <Form />
-          <div className="flex space-x-4"></div>
+          <div className="flex space-x-4 mb-4"></div>
         </div>
       )}
     </Transition>

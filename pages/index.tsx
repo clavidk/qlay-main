@@ -71,10 +71,10 @@ export default function Home() {
     setAnswer(sampleAnswer);
     setChunks(samplePassages);
 
-    // Show the footer after a 7-second delay
+    // Show the footer after a 3-second delay
     setTimeout(() => {
       setShowFooter(true);
-    }, 5000);
+    }, 3000);
 
   };  
   
@@ -216,9 +216,8 @@ export default function Home() {
       </Head>
 
       <div className="flex flex-col h-screen">
-      <Navbar />
       <div className="flex-1 overflow-auto">
-        <div className="mx-auto flex h-full w-full max-w-[750px] flex-col items-center px-3 pt-4 sm:pt-8">
+        <div className="mx-auto flex mt-32 w-full max-w-[750px] flex-col items-center px-3 pt-4 sm:pt-8">
           <h1 className="text-4xl font-bold mb-4">Ask Pastor JohnGPT</h1>
           {(
             <div className="relative w-full mt-4">
@@ -241,18 +240,20 @@ export default function Home() {
                 />
               </button>
 
-              <div className="mt-2 space-y-2">
+              <div className="mt-2 space-y-2 text-center">
                 <h3 className="text-lg font-semibold mt-6 mb-2 text-gray-800">Featured Questions</h3>
-                {sampleQAs.map((sampleQA, index) => (
-                  <button
-                    key={index}
-                    className="flex items-center bg-white text-gray-600 px-2 py-1 rounded-full border border-gray-300 hover:border-gray-400 focus:outline-none text-base"
-                    onClick={() => handleSampleQuestion(sampleQA.question, sampleQA.answer, sampleQA.passages)}
-                  >
-                    <IconSearch className="w-4 h-4 text-gray-400 mr-2" />
-                    {sampleQA.question}
-                  </button>
-                ))}
+                <div className="flex flex-wrap justify-center space-x-2">
+                  {sampleQAs.map((sampleQA, index) => (
+                    <button
+                      key={index}
+                      className="flex items-center bg-white text-gray-600 px-2 py-1 rounded-full border border-gray-300 hover:border-gray-400 focus:outline-none text-base"
+                      onClick={() => handleSampleQuestion(sampleQA.question, sampleQA.answer, sampleQA.passages)}
+                    >
+                      <IconSearch className="w-4 h-4 text-gray-400 mr-2" />
+                      {sampleQA.question}
+                    </button>
+                  ))}
+                </div>
               </div>
 
               </div>
