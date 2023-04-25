@@ -258,7 +258,7 @@ export default function Home() {
                 ref={inputRef}
                 className="h-11 w-full rounded-full border border-gray-300 pr-12 pl-11 focus:outline-none focus:ring-0 focus:border-gray-300 text-base sm:h-11 sm:py-0 sm:pr-16 sm:pl-16 sm:text-lg shadow-hover"
                 type="text"
-                placeholder="What's your favorite food?"
+                placeholder="Ask any question"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyDown={handleKeyDown}
