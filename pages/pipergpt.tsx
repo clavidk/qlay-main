@@ -1,7 +1,5 @@
 import { Answer } from "@/components/Answer/Answer";
 import { Footer } from "@/components/Footer";
-import { Navbar } from "@/components/Navbar";
-import { Form } from "@/components/Form";
 import { PiperChunk } from "@/types";
 import { IconArrowRight, IconExternalLink, IconSearch } from "@tabler/icons-react";
 import endent from "endent";
@@ -247,8 +245,8 @@ export default function Home() {
         />
       </Head>
 
-      <div className="flex flex-col h-screen">
-      <div className="flex-1 overflow-auto">
+      <div className="flex flex-col min-h-screen">
+        <div className="flex-1 overflow-auto">
         <div className="mx-auto flex mt-32 w-full max-w-[750px] flex-col items-center px-3 pt-4 sm:pt-8">
           <h1 className="text-5xl font-bold mb-4 items-center">Ask Pastor <span className="inline-flex">J<span className="relative"><Image src="/img/piper-icon.png" alt="Custom O" width="50" height="50"/></span>hnGPT</span></h1>
           {(
