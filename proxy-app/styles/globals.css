@@ -1,7 +1,0 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
-.shadow-hover:hover, .shadow-hover:focus-visible {
-    box-shadow: 0 1px 6px rgba(32,33,36,.28);
-}
