@@ -45,7 +45,7 @@ export const Form: FC = () => {
 
     return (
         <form onSubmit={handleSubmit} className="flex flex-col space-y-2 items-center">
-        <div className="flex space-x-0 items-center">
+        <div className="flex space-x-0 items-center mb-4">
             <input
             id="email"
             type="email"
@@ -81,7 +81,7 @@ export const Form: FC = () => {
                 ></path>
                 </svg>
             ) : (
-                'Submit'
+                'Get Updates'
             )}
             </button>
         </div>

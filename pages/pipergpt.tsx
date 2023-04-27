@@ -101,10 +101,10 @@ export default function Home() {
     setAnswer(sampleAnswer);
     setChunks(samplePassages);
 
-    // Show the footer after a 7-second delay
+    // Show the footer after a 3-second delay
     setTimeout(() => {
       setShowFooter(true);
-    }, 7000);
+    }, 3000);
 
   };  
   
@@ -209,10 +209,10 @@ export default function Home() {
       setAnswer((prev) => prev + chunkValue);
     }
 
-    // Show the footer after a 7-second delay
+    // Show the footer after a 3-second delay
     setTimeout(() => {
       setShowFooter(true);
-    }, 7000);
+    }, 3000);
 
     inputRef.current?.focus();
   };
