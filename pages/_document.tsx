@@ -6,9 +6,7 @@ import { GoogleTagManagerHead, GoogleTagManagerBody } from '../components/Google
 function Document() {
   return (
     <Html lang="en">
-      <Head>
-        <GoogleTagManagerHead />
-      </Head>
+      <Head />
       <body>
         <GoogleTagManagerBody />
         <Main />
