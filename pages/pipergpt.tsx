@@ -1,11 +1,13 @@
 import { Answer } from "@/components/Answer/Answer";
 import { Footer } from "@/components/Footer";
+import SEO from '../components/SEO';
 import { PiperChunk } from "@/types";
 import { IconArrowRight, IconExternalLink, IconSearch } from "@tabler/icons-react";
 import endent from "endent";
 import Head from "next/head";
 import Image from "next/image";
 import { KeyboardEvent, useRef, useState } from "react";
+
 
 
 export default function Home() {
@@ -229,8 +231,12 @@ export default function Home() {
 
   return (
     <>
+      <SEO
+        title="JohnPiperGPT"
+        description="AI-simulated John Piper. But really, it's kind of legit."
+      />
       <Head>
-        <title>John Piper GPT</title>
+        <title>JohnPiperGPT</title>
         <meta
           name="description"
           content={`AI-powered Q&A for John Piper.`}
