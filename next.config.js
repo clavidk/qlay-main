@@ -23,6 +23,16 @@ module.exports = {
         ],
         destination: '/pipergpt/:path*',
       },
+      {
+        source: '/',
+        has: [
+          {
+            type: 'host',
+            value: 'pipergpt.clayte.xyz',
+          },
+        ],
+        destination: '/pipergpt',
+      },
     ];
   },
 };
