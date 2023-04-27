@@ -15,7 +15,6 @@ module.exports = {
       },
       {
         source: '/:path*',
-        basePath: false,
         has: [
           {
             type: 'host',
