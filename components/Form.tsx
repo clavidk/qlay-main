@@ -57,9 +57,9 @@ export const Form: FC = () => {
             />
             <button
             type="submit"
-            className="py-2 px-8 text-white text-sm bg-red-600 border border-red-600 hover:bg-red-700 flex justify-center items-center"
+            className="py-2 px-4 text-white text-sm bg-red-600 border border-red-600 hover:bg-red-700 flex justify-center items-center"
             disabled={isSubmitting}
-            style={{ minWidth: '96px', minHeight: '32px' }}
+            style={{ minWidth: '120px', minHeight: '32px' }}
             >
             {isSubmitting ? (
                 <svg
@@ -81,7 +81,7 @@ export const Form: FC = () => {
                 ></path>
                 </svg>
             ) : (
-                'Get Updates'
+                'Update Me'
             )}
             </button>
         </div>

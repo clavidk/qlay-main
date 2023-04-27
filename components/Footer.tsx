@@ -33,7 +33,7 @@ export const Footer: FC<FooterProps> = ({ show }) => {
         >
           <div className="hidden sm:flex"></div>
           <h1 className="text-2xl font-bold mt-2 mb-2">New cool stuff coming</h1>
-          <p className="text-sm text-gray-500 mb-4">EdwardsGPT  &nbsp;&#8226;&nbsp;  CalvinGPT &nbsp;&#8226;&nbsp; Focal (Bible reading assistant)</p>
+          <p className="text-sm text-gray-500 mb-4 text-center">EdwardsGPT  &nbsp;&#8226;&nbsp;  CalvinGPT &nbsp;&#8226;&nbsp; Focal (Bible reading assistant)</p>
           <Form />
           <div className="flex space-x-4 mb-4 sm:mb-0"></div>
         </div>
