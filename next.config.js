@@ -7,12 +7,13 @@ module.exports = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  async rewrites() {
+  async redirects() {
     return [
       {
         source: '/pipergpt',
-        destination: '/pipergpt',
+        destination: 'https://pipergpt.qlay.xyz',
+        permanent: true,
       },
-    ];
+    ]
   },
 };
