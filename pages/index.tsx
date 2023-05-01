@@ -269,12 +269,12 @@ export default function Home() {
                 onKeyDown={handleKeyDown}
               />
 
-              {/* <button>
+              <button>
                 <IconArrowRight
                   onClick={mode === "search" ? handleSearch : handleAnswer}
                   className="absolute right-2 top-1.5 h-6 w-6 rounded-full bg-red-600 p-1 hover:cursor-pointer hover:bg-red-700 sm:right-3 sm:top-2 sm:h-8 sm:w-8 text-white"
                 />
-              </button> */}
+              </button>
 
               </div>
             )}
