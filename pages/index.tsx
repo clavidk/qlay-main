@@ -269,28 +269,12 @@ export default function Home() {
                 onKeyDown={handleKeyDown}
               />
 
-              <button>
+              {/* <button>
                 <IconArrowRight
                   onClick={mode === "search" ? handleSearch : handleAnswer}
                   className="absolute right-2 top-1.5 h-6 w-6 rounded-full bg-red-600 p-1 hover:cursor-pointer hover:bg-red-700 sm:right-3 sm:top-2 sm:h-8 sm:w-8 text-white"
                 />
-              </button>
-
-              <div className="mt-2 space-y-2 text-center">
-                <h3 className="text-lg font-semibold mt-6 mb-2 text-gray-500">Featured Questions</h3>
-                <div className="flex flex-wrap justify-center space-x-2 gap-y-2">
-                  {sampleQAs.map((sampleQA, index) => (
-                    <button
-                      key={index}
-                      className="flex items-center bg-white text-gray-600 px-2 py-1 rounded-full border border-gray-300 hover:border-gray-400 focus:outline-none text-base"
-                      onClick={() => handleSampleQuestion(sampleQA.question, sampleQA.answer, sampleQA.passages)}
-                    >
-                      <IconSearch className="w-4 h-4 text-gray-400 mr-2" />
-                      {sampleQA.question}
-                    </button>
-                  ))}
-                </div>
-              </div>
+              </button> */}
 
               </div>
             )}
@@ -388,7 +372,26 @@ export default function Home() {
                 ))}
               </div>
             ) : (
-              <div className="mt-6 text-center text-md text-gray-400">{`Disclaimer: Answers may not reflect the actual opinions or thoughts of John Piper`}</div>
+              <div>
+                <div className="mt-2 space-y-2 text-center">
+                  <h3 className="text-lg font-semibold mt-6 mb-2 text-gray-500">Featured Questions</h3>
+                  <div className="flex flex-wrap justify-center space-x-2 gap-y-2">
+                    {sampleQAs.map((sampleQA, index) => (
+                      <button
+                        key={index}
+                        className="flex items-center bg-white text-gray-600 px-2 py-1 rounded-full border border-gray-300 hover:border-gray-400 focus:outline-none text-base"
+                        onClick={() => handleSampleQuestion(sampleQA.question, sampleQA.answer, sampleQA.passages)}
+                      >
+                        <IconSearch className="w-4 h-4 text-gray-400 mr-2" />
+                        {sampleQA.question}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+                <div className="mt-6 text-center text-md text-gray-400">
+                  {`Disclaimer: Answers may not reflect the actual opinions or thoughts of John Piper`}
+                </div>
+              </div>
             )}
           </div>
         </div>
