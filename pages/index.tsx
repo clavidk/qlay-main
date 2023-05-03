@@ -22,6 +22,31 @@ export default function Home() {
 
   const sampleQAs = [
     {
+      question: "Will there be dogs in heaven?",
+      answer:
+        "The Bible does not give a clear answer to whether there will be dogs in heaven. However, we do know that God created all creatures, including animals, and it is unlikely that He would create them only to destroy them in the end. In fact, Isaiah 65:25 describes a future age where animals will live in peace with each other and with humans. This could be interpreted as a literal description of heaven. Additionally, the Bible promises that all pain, suffering, and disease will be eradicated in the new heaven and new earth, and all that is good in this world will be preserved. However, it is also clear that those who reject Christ will not enter into this eternal paradise, but will instead face eternal punishment. Therefore, while we cannot say for certain whether there will be dogs in heaven, we can trust that God's plan for His creation is good and just.",
+      passages: [
+        {
+          article_title: "Do Pets Go to Heaven?",
+          article_date: "2015-02-19",
+          article_url: "https://www.desiringgod.org/interviews/do-pets-go-to-heaven",
+          content: "(Isaiah 65:25) I count ten animals named in describing the age to come. Now you might take all that as symbolic pictures of peace, but it seems to me a very odd way of talking if you don’t mean it literally. I think that is weird to say, “No animals are going to be there, but let’s use animals to illustrate human peace.” No, it looks to me like they are really going to be there. The reason I take those texts so seriously is that, when I ask a couple of questions, I get a certain answer. Here is the question: Did God create a group of beings only to destroy them in the end — a whole group, like animals? “Let’s have animals for history and no animals for eternity.” I doubt it.",
+        },
+        {
+          article_title: "Undoing the Destruction of Pleasure",
+          article_date: "2001-04-10",
+          article_url: "https://www.desiringgod.org/messages/undoing-the-destruction-of-pleasure",
+          content: "All pain, all crying, all depression, all arthritis. All cancer. All Alzheimer. All car accidents. All earthquakes. All floods. All diseases are going to be over. And if you knew the Bible in detail you’d know in the future there’s not just this kind of ethereal future with gold streets and glassy ponds, and that never appealed to me as a kid. There is going to be new heaven and a new earth. Lions lay down with lambs. And children will play upon the whole of the adder. We will beat our swords into plowshares and war will be no more. And all that is good in this world, which is much, will be preserved and all that is bad will be done away. And all those who trusted in Christ who purchased all that for us will have it and all those who have rejected him will not have of it.",
+        },
+        {
+          article_title: "How My Pastoral Ministry Shapes My Pulpit Ministry",
+          article_date: "2001-04-10",
+          article_url: "https://www.desiringgod.org/messages/how-my-pastoral-ministry-shapes-my-pulpit-ministry",
+          content: "(Matthew 18:8) The Son of Man will send his angels, and they will gather out of his kingdom all causes of sin and all law-breakers, and throw them into the fiery furnace. In that place there will be weeping and gnashing of teeth. (Matthew 13:41) And if your eye causes you to sin, tear it out. It is better for you to enter the kingdom of God with one eye than with two eyes to be thrown into hell, ‘where their worm does not die and the fire is not quenched.’ (Mark 9:47) 5. The plight of all men on the way to that punishment is that they are spiritually dead and blind and morally unable to see Christ as true and beautiful.",
+        },
+      ]
+    },
+    {
       question: "Your favorite novels?",
       answer:
         "As a lover of literature, I have many favorite novels. All the Light We Cannot See by Anthony Doerr is a beautifully written book about World War II and the interweaving of lives of a young blind girl during the bombing of the Germans on France. A Man at Arms by Steven Pressfield is also a contemporary novel that tells the dramatic story of a young speechless girl carrying the Corinthian correspondence to Corinth, Paul’s letters to Corinth, and a man at arms who steps up to be her protector. If I had to pick a classic, it would be Crime and Punishment by Dostoevsky, just because the power of the description of the tormented soul of Raskolnikov is unparalleled. As a Christian, I also spend a lot of time reading the Bible. My favorite, most frequently used Bible app is Logos Bible software. It is an excellent tool for studying the Bible and has helped me to deepen my understanding of God's Word. I believe that reading is a valuable and enriching experience, and I encourage everyone to read as much as they can. Even in my seventies, I am constantly discovering new books and authors that I have never read before. I recently read The Warmth of Other Suns, a Pulitzer prize-winning narrative history that is just knocking me over with sadness because of what I was involved in in those days and the horrors of the background of African Americans in this country. I also just finished listening to Leland Ryken’s new biography of J. I. Packer. In other words, I try to listen to fiction if somebody has given me a really good recommendation of something contemporary or if I want to get back into something historic that I haven’t even done.",
@@ -46,25 +71,25 @@ export default function Home() {
         },
       ]
     },
-    {
-      question: "What's your favorite food?",
-      answer:
-        "My favorite breakfast is a layer of Grape Nuts and a layer of Mini Shredded Wheats, and my favorite soft drink alternates between Diet Dr. Pepper and Diet Coke. At home, my wife's spaghetti is hands down my favorite dinner. As for restaurants, my wife says I can't say Chick-fil-A or Chipotle, but Olive Garden is a bona fide restaurant that I enjoy. However, I believe that the more expensive the restaurant, the weirder the food tastes.",
-      passages: [
-        {
-          article_title: "John Piper's Favorite Things",
-          article_date: "2023-01-01",
-          article_url: "https://www.desiringgod.org/interviews/john-pipers-favorite-things",
-          content: "Favorite restaurant? Well, we talked about that one, and she said, “You can’t say Chick-fil-A, and you can’t say Chipotle, because he doesn’t mean fast foods. He means real bona fide restaurants.” And so I said, “Well, how about, then, Olive Garden?” And she said, “Well, that would work.” When our sons were growing up, we didn’t very often go out to eat, and when we did, we went to the places I like, like Chick-fil-A. And then, if we stepped it up, we would go to Olive Garden. And they thought Olive Garden was fine dining. It is. Why would you want to go any higher than that? Food tastes weird if you go higher than that. The more expensive the restaurant, the weirder the food",
-        },
-        {
-          article_title: "Grape Nuts — Hot or Cold?",
-          article_date: "2017-01-27",
-          article_url: "https://www.desiringgod.org/interviews/grape-nuts-hot-or-cold",
-          content: "What is your preference?” I am only willing to answer this question because I know who asked it, and she is a woman of substance, you might say, like Grape Nuts — though that probably does not sound like a compliment. The answer is no. Soggy is not good. And dry crunchy is not good. But cold, milk crunchy, mingled with mini shredded wheats and Great Harvest, non-crunchy granola well-timed so that you don’t have squishy minis or warm milk: now that is the right kind of crunchy. But, really, there is another secret that makes this breakfast unsurpassed in pleasure and has kept me coming back for about thirty years and gets me out of bed in the morning with hope and beckons me home while I am jogging and makes me want to go to bed early at night, so that the morning will come faster with breakfast",
-        },
-      ]
-    },
+    // {
+    //   question: "What's your favorite food?",
+    //   answer:
+    //     "My favorite breakfast is a layer of Grape Nuts and a layer of Mini Shredded Wheats, and my favorite soft drink alternates between Diet Dr. Pepper and Diet Coke. At home, my wife's spaghetti is hands down my favorite dinner. As for restaurants, my wife says I can't say Chick-fil-A or Chipotle, but Olive Garden is a bona fide restaurant that I enjoy. However, I believe that the more expensive the restaurant, the weirder the food tastes.",
+    //   passages: [
+    //     {
+    //       article_title: "John Piper's Favorite Things",
+    //       article_date: "2023-01-01",
+    //       article_url: "https://www.desiringgod.org/interviews/john-pipers-favorite-things",
+    //       content: "Favorite restaurant? Well, we talked about that one, and she said, “You can’t say Chick-fil-A, and you can’t say Chipotle, because he doesn’t mean fast foods. He means real bona fide restaurants.” And so I said, “Well, how about, then, Olive Garden?” And she said, “Well, that would work.” When our sons were growing up, we didn’t very often go out to eat, and when we did, we went to the places I like, like Chick-fil-A. And then, if we stepped it up, we would go to Olive Garden. And they thought Olive Garden was fine dining. It is. Why would you want to go any higher than that? Food tastes weird if you go higher than that. The more expensive the restaurant, the weirder the food",
+    //     },
+    //     {
+    //       article_title: "Grape Nuts — Hot or Cold?",
+    //       article_date: "2017-01-27",
+    //       article_url: "https://www.desiringgod.org/interviews/grape-nuts-hot-or-cold",
+    //       content: "What is your preference?” I am only willing to answer this question because I know who asked it, and she is a woman of substance, you might say, like Grape Nuts — though that probably does not sound like a compliment. The answer is no. Soggy is not good. And dry crunchy is not good. But cold, milk crunchy, mingled with mini shredded wheats and Great Harvest, non-crunchy granola well-timed so that you don’t have squishy minis or warm milk: now that is the right kind of crunchy. But, really, there is another secret that makes this breakfast unsurpassed in pleasure and has kept me coming back for about thirty years and gets me out of bed in the morning with hope and beckons me home while I am jogging and makes me want to go to bed early at night, so that the morning will come faster with breakfast",
+    //     },
+    //   ]
+    // },
     {
       question: "Is my depression biological or spiritual?",
       answer:
