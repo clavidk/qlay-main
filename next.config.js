@@ -1,19 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+}
+
+module.exports = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  rewrites: async () => [
-    {
-      source: "/qlay.xyz",
-      destination: "/",
-    },
-    {
-      source: "/pipergpt.qlay.xyz",
-      destination: "/piper",
-    },
-  ]
-}
-
-module.exports = nextConfig;
+  async redirects() {
+    return [
+      {
+        source: '/pipergpt',
+        destination: 'https://pipergpt.qlay.xyz',
+        permanent: true,
+      },
+    ]
+  },
+};
