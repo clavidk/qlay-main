@@ -12,7 +12,9 @@ const Home: FC = () => (
       <meta name="description" content="Tools for the sojourner life" />
     </Head>
     <Container>
-      <h1 className="text-5xl font-bold mb-4 items-center">QLAY</h1>
+      <div>
+        <h1 className="text-5xl font-light font-serif mb-4 items-center">QLAY</h1>
+      </div>
       <Form />
     </Container>
   </>
