@@ -131,7 +131,7 @@ export default function Home() {
     // Show the footer after a 3-second delay
     setTimeout(() => {
       setShowFooter(true);
-    }, 3000);
+    }, 4000);
 
   };  
   
