@@ -13,13 +13,13 @@ const Home: FC = () => (
     </Head>
     <Container>
       <div className="my-8 text-center">
-        <h1 className="text-5xl font-light font-serif mb-4 items-center">QLAY</h1>
+        <h1 className="text-5xl font-light font-serif mb-4 items-center text-white">QLAY</h1>
       </div>
       <div className="my-8 text-center">
         <Form />
       </div>
       <div className="my-8 text-center">
-        <a href="https://pipergpt.qlay.xyz" className="underline text-blue-500">JohnPiperGPT</a>
+        <a href="https://pipergpt.qlay.xyz" className="text-blue-500">JohnPiperGPT</a>
       </div>
     </Container>
   </>
