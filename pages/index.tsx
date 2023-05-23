@@ -15,7 +15,12 @@ const Home: FC = () => (
       <div>
         <h1 className="text-5xl font-light font-serif mb-4 items-center">QLAY</h1>
       </div>
-      <Form />
+      <div>
+        <Form />
+      </div>
+      <div>
+        <a href="https://pipergpt.qlay.xyz">JohnPiperGPT</a>
+      </div>
     </Container>
   </>
 );
