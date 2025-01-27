@@ -16,7 +16,7 @@ const Home: FC = () => (
       </div>
       <div className="my-8 text-center">
       </div>
-      <div className="my-8 text-center text-gray">
+      <div className="my-8 text-center font-serif text-gray-500">
         contact: founders at qlaystudios dot xyz
       </div>
     </Container>
