@@ -12,11 +12,11 @@ const Home: FC = () => (
     </Head>
     <Container>
       <div className="my-8 text-center">
-        <h1 className="text-5xl font-light font-serif mb-4 items-center text-white">QLAY</h1>
+        <h1 className="text-5xl font-light font-serif mb-4 items-center text-white">QLAY STUDIOS</h1>
       </div>
       <div className="my-8 text-center">
       </div>
-      <div className="my-8 text-center">
+      <div className="my-8 text-center text-gray">
         contact: founders at qlaystudios dot xyz
       </div>
     </Container>
