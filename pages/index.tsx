@@ -16,8 +16,8 @@ const Home: FC = () => (
         <Image 
           src="/img/qlay_jar.png" 
           alt="Qlay Jar" 
-          width={300} 
-          height={300}
+          width={500} 
+          height={500}
           className="mx-auto mb-4"
         />
         <h1 className="text-5xl font-light font-serif mb-4 items-center text-white">QLAY LABS</h1>
